@@ -35,13 +35,13 @@ class Spin:
 class Move:
     """Properties to step size and direction"""
     
-    def __init__(self, s, cost, sint, cosp, sinp, p)
+    def __init__(self, s, costheta, sintheta, cospsi, sinpsi, psi)
         self.s = s
-        self.cost = cost
-        self.sint = sint
-        self.cosp = cosp
-        self.sinp = sinp
-        self.p = p
+        self.costheta = costheta
+        self.sintheta = sintheta
+        self.cospsi = cospsi
+        self.sinpsi = sinpsi
+        self.psi = psi
 
 class weight:
     """ Photon Status """
