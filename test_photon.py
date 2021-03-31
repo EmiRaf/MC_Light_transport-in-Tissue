@@ -1,5 +1,5 @@
 import pytest
-from Photon import Spin
+from photon import Spin
 
 
 @pytest.mark.parametrize(
