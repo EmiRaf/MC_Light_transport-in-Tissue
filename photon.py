@@ -22,9 +22,32 @@ class Trayect:
         self.uz = uz
         
 class Spin:
-    """Gives you direction to where it moves"""
+    """
+    Gives you direction to where it moves
+    temporary values used during SPIN for new trajectory
+    """
     
     def __init__(self, uxx, uyy, uzz):
         self.uxx = uxx
         self.uyy = uyy
         self.uzz = uzz
+        
+class Move:
+    """Properties to step size and direction"""
+    
+    def __init__(self, s, cost, sint, cosp, sinp, p)
+        self.s = s
+        self.cost = cost
+        self.sint = sint
+        self.cosp = cosp
+        self.sinp = sinp
+        self.p = p
+
+class weight:
+    """ Photon Status """
+    
+    def __init__(self, weight, absorb, photon_status):
+    self.weight = weight
+    self.absorb = absorb
+    self.photon_status = photon_status
+

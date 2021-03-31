@@ -1,5 +1,5 @@
 import pytest
-from Photon import Trayect
+from Photon import Spin
 
 
 @pytest.mark.parametrize(
@@ -11,9 +11,9 @@ from Photon import Trayect
 			(-0.0, -1000, -0.0001, (-0.0, -1000, -0.0001))
 		]
 	)
-def test_Trayect(input_a, input_b, input_c, expected):
-    photon = Trayect(input_a, input_b, input_c)
-    x = photon.ux
-    y = photon.uy
-    z = photon.uz
+def test_Spin(input_a, input_b, input_c, expected):
+    photon = Spin(input_a, input_b, input_c)
+    x = photon.uxx
+    y = photon.uyy
+    z = photon.uzz
     assert (x,y,z) == expected
